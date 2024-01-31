@@ -1,5 +1,5 @@
-import { Given, When, Then } from "@wdio/cucumber-framework";
-import chai from 'chai';
+import { Given, When, Then } from "@cucumber/cucumber";
+import * as chai from "chai";
 
 Given(/^Google page is opened$/, async function () {
   console.log("Before open");
@@ -22,7 +22,7 @@ Then(/^Click on the first search result$/, async function () {
 
 Then(/^URL should match (.*)$/, async function (expectedURL) {
   console.log(`<< expectedURL: ${expectedURL}`);
-  let url = await browser.getUrl();  
+  let url = await browser.getUrl();
   chai.expect(url).to.equal(expectedURL);
 
 });
