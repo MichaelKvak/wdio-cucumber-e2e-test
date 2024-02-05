@@ -9,5 +9,5 @@ Feature: Demo feature
 
 
         Examples:
-            | TestID     | SearchItem | ExpectedURL           |
-            | DEMO_TC001 | WDIO       | https://webdriver.io/ |
+            | TestID     | SearchItem | ExpectedURL              |
+            | DEMO_TC001 | WDIO       | https://webdriver.io/uk/ |
